@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import PropTypes from 'prop-types';
 import Section from './Feedback/Section';
 import FeedbackOptions from './Feedback/FeedbackOptions';
 import Statistics from './Feedback/Statistics';
@@ -59,3 +60,7 @@ export class App extends Component {
     );
   }
 }
+
+App.propTypes = {
+  children: PropTypes.node.isRequired,
+};
